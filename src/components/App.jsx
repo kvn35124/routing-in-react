@@ -12,9 +12,9 @@ class App extends React.Component {
         return (
             <Router>
                 <Fragment>
-                    <Link className="btn btn-primary m-2">Go Home</Link>
-                    <Link className="btn btn-primary m-2">View Films</Link>
-                    <Link className="btn btn-primary m-2">View People</Link>
+                    <Link to="" className="btn btn-primary m-2">Go Home</Link>
+                    <Link to="" className="btn btn-primary m-2">View Films</Link>
+                    <Link to="" className="btn btn-primary m-2">View People</Link>
                     <Switch>
                         <Route />
                         <Route />
