@@ -1,5 +1,8 @@
-import React, {Fragment} from 'react';
-import {BrowserRouter as Router, Link, Switch, Route} from 'react-router-dom';
+import React, { Fragment } from 'react';
+import { BrowserRouter as Router, Link, Switch, Route } from 'react-router-dom';
+import FilmCard from './FilmCard';
+import PeopleCard from './PeopleCard';
+import Home from './Home';
 
 class App extends React.Component {
     constructor(props) {
@@ -12,14 +15,13 @@ class App extends React.Component {
         return (
             <Router>
                 <Fragment>
-                    <Link to="" className="btn btn-primary m-2">Go Home</Link>
-                    <Link to="" className="btn btn-primary m-2">View Films</Link>
-                    <Link to="" className="btn btn-primary m-2">View People</Link>
                     <Switch>
-                        <Route />
-                        <Route />
+                        <Route exact path="/" component={Home} />
+                        <Route exact path="/films" component={FilmCard} />
+                        <Route exact path="/people" component={PeopleCard} />
                     </Switch>
                 </Fragment>
+
             </Router>
         )
     }
