@@ -37,8 +37,8 @@ class FilmCard extends React.Component {
                                 <div className="card border border-dark m-2">
                                     <div className="card-body bg-success">
                                         <h5 className="card-title text-center">{film.title}</h5>
-                                        <p className="card-text">{film.description}</p>
-                                        <Link to="" className="btn btn-primary">Discription</Link>
+                                        <p className="card-text">{film.description.substring(0, 100)}... </p>
+                                        <Link to={`/description/${film.id}`}className="btn btn-primary">More Info</Link>
                                     </div>
                                 </div>
                             )
